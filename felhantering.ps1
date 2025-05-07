@@ -16,4 +16,4 @@ function Dividera {
     
 }
 
-Dividera -a 10 -b 0
+Dividera -a 10 -b 
