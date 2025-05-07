@@ -1,6 +1,6 @@
 # funktion try-catch-finally
 
-function tal-test {
+function taltest {
     param ($tal)
     try {
         if ($tal -lt 0) {
@@ -17,5 +17,5 @@ function tal-test {
     }
 }
 
-tal-test -tal -1
+taltest -tal -1
 
