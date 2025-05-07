@@ -1,15 +1,20 @@
 # Programmet pingar flera adresse, to-do log lista   
 
 # pinga något med en funtkion try-catch 
+
+$loggfil = "pinga logg.txt"
 function testnetwork {
     param ($datornamn)
     try {
     $ping = Test-Connection -ComputerName $datornamn -Count 1 -ErrorAction Stop
-    Write-Host "$datornamn är tillgänglig"
+    $medelande ="$datornamn är tillgänglig"
+    Write-Host $medelande
+    Add-content -Path $loggfil -Value $medelande
     
     }
     catch {
-  Write-Host "$datornamn är inte tillgänglig"
+  $medelande ="$datornamn är tillgänglig"
+    Write-Host $medelande
     }
 
    

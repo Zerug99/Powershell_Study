@@ -1,0 +1,2 @@
+localhost är tillgänglig
+8.8.8.8 är tillgänglig
